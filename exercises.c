@@ -114,7 +114,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
     scanf("%d",a);
   }
   for(int i = 0; i < 3; i++){
-    scanf("%d",n);
+    scanf("%d",b);
   }
 
 }
