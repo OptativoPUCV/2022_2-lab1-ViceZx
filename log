@@ -23,3 +23,21 @@ exercises.c:94:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 47b30b6
+Fri 12 Aug 2022 02:14:50 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:23: error: expected expression before ‘Persona’
+   62 |   scanf("%s""%s""%d",&Persona.nombre,&Persona.rut,&Persona.edad);
+      |                       ^~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:81:16: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   81 |   int vector = malloc (n*sizeof(int));
+      |                ^~~~~~
+exercises.c:82:10: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   82 |   return vector;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+728a9d7
