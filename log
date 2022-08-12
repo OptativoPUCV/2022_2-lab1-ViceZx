@@ -389,3 +389,41 @@ Fri 12 Aug 2022 05:43:42 PM UTC:
  tests:  2|5
 total_score: 20/70
 8ce8b46
+Fri 12 Aug 2022 05:59:37 PM UTC: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:113:7: error: ‘a’ redeclared as different kind of symbol
+  113 |   int a,b,c = 0;
+      |       ^
+exercises.c:112:21: note: previous definition of ‘a’ with type ‘Vector *’
+  112 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ~~~~~~~~~^
+exercises.c:113:9: error: ‘b’ redeclared as different kind of symbol
+  113 |   int a,b,c = 0;
+      |         ^
+exercises.c:112:33: note: previous definition of ‘b’ with type ‘Vector *’
+  112 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+exercises.c:113:11: error: ‘c’ redeclared as different kind of symbol
+  113 |   int a,b,c = 0;
+      |           ^
+exercises.c:112:45: note: previous definition of ‘c’ with type ‘Vector *’
+  112 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                                    ~~~~~~~~~^
+exercises.c:119:13: error: subscripted value is neither array nor pointer nor vector
+  119 |         if(a[i] == b[j]){
+      |             ^
+exercises.c:119:21: error: subscripted value is neither array nor pointer nor vector
+  119 |         if(a[i] == b[j]){
+      |                     ^
+exercises.c:120:12: error: subscripted value is neither array nor pointer nor vector
+  120 |           c[k] = a+b;
+      |            ^
+exercises.c:113:11: error: variable ‘c’ set but not used [-Werror=unused-but-set-variable]
+  113 |   int a,b,c = 0;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+64c3178
