@@ -453,3 +453,36 @@ exercises.c:116:7: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 2531908
+Fri 12 Aug 2022 06:02:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:11: error: passing argument 1 of ‘scanf’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  114 |     scanf(&a);
+      |           ^~
+      |           |
+      |           Vector **
+In file included from test.c:1:
+/nix/store/dwsi3wsqpqm0hpzdm9fsxc7q732p9xwi-glibc-2.34-210-dev/include/stdio.h:415:42: note: expected ‘const char * restrict’ but argument is of type ‘Vector **’
+  415 | extern int scanf (const char *__restrict __format, ...) __wur;
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from test.c:5:
+exercises.c:114:11: error: format not a string literal and no format arguments [-Werror=format-security]
+  114 |     scanf(&a);
+      |           ^~
+exercises.c:116:15: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘Vector **’ [-Werror=format=]
+  116 |       scanf("%d",&b);
+      |              ~^  ~~
+      |               |  |
+      |               |  Vector **
+      |               int *
+exercises.c:114:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  114 |     scanf(&a);
+      |     ^~~~~~~~~
+exercises.c:116:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  116 |       scanf("%d",&b);
+      |       ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a7abb47
