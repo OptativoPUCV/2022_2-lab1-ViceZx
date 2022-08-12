@@ -702,3 +702,14 @@ exercises.c:113:12: error: format ‘%c’ expects argument of type ‘int’, b
 cc1: all warnings being treated as errors
 Compilation failed
 05aeca1
+Fri 12 Aug 2022 06:23:35 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:4: error: ‘arreglo’ undeclared (first use in this function)
+   83 |    arreglo = (Vector *)malloc(sizeof(Vector)*n);
+      |    ^~~~~~~
+exercises.c:83:4: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3bac37f
