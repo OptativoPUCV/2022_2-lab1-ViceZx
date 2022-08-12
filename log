@@ -758,3 +758,13 @@ exercises.c:84:12: error: ignoring return value of ‘malloc’ declared with at
 cc1: all warnings being treated as errors
 Compilation failed
 eee163a
+Fri 12 Aug 2022 06:30:08 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:11: error: expected expression before ‘int’
+   83 |    return int *ptr = malloc(n*sizeof(Vector));
+      |           ^~~
+Compilation failed
+2217df5
