@@ -41,3 +41,13 @@ exercises.c:82:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 728a9d7
+Fri 12 Aug 2022 02:15:47 PM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:23: error: expected expression before ‘Persona’
+   62 |   scanf("%s""%s""%d",&Persona.nombre,&Persona.rut,&Persona.edad);
+      |                       ^~~~~~~
+Compilation failed
+ea71ec6
