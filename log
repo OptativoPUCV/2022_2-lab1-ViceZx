@@ -51,3 +51,11 @@ exercises.c:62:23: error: expected expression before ‘Persona’
       |                       ^~~~~~~
 Compilation failed
 ea71ec6
+Fri 12 Aug 2022 02:16:22 PM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:23: error: expected expression before ‘Persona’
+   62 |   scanf("%s""%s""%d",&Persona.nombre,&Persona.rut,&Persona.edad);
+      |                       ^~~~~~~
+Compilation failed
+11ce053
