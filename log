@@ -674,3 +674,17 @@ exercises.c:113:12: error: format ‘%d’ expects argument of type ‘int’, b
 cc1: all warnings being treated as errors
 Compilation failed
 cf3abfa
+Fri 12 Aug 2022 06:17:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:113:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘Vector **’ [-Werror=format=]
+  113 |   printf("%d",&a);
+      |           ~^  ~~
+      |            |  |
+      |            |  Vector **
+      |            int
+cc1: all warnings being treated as errors
+Compilation failed
+d9602c3
