@@ -111,10 +111,10 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   for(int i = 0; i < 3; i++){
-    scanf("%d",a);
+    scanf("%d",a[i]);
   }
   for(int i = 0; i < 3; i++){
-    scanf("%d",b);
+    scanf("%d",b[i]);
   }
 
 }

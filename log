@@ -634,3 +634,29 @@ exercises.c:117:5: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 d7d3a7f
+Fri 12 Aug 2022 06:13:06 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:13: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘Vector’ [-Werror=format=]
+  114 |     scanf("%d",a[i]);
+      |            ~^  ~~~~
+      |             |   |
+      |             |   Vector
+      |             int *
+exercises.c:117:13: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘Vector’ [-Werror=format=]
+  117 |     scanf("%d",b[i]);
+      |            ~^  ~~~~
+      |             |   |
+      |             |   Vector
+      |             int *
+exercises.c:114:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  114 |     scanf("%d",a[i]);
+      |     ^~~~~~~~~~~~~~~~
+exercises.c:117:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  117 |     scanf("%d",b[i]);
+      |     ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a40f440
