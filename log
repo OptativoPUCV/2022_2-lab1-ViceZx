@@ -120,3 +120,29 @@ exercises.c:22:5: note: declared here
       |     ^~~~~
 Compilation failed
 e79626b
+Fri 12 Aug 2022 02:25:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:19: error: passing argument 1 of ‘sumaN’ makes pointer from integer without a cast [-Werror=int-conversion]
+   41 |   int sum = sumaN(2,3);
+      |                   ^
+      |                   |
+      |                   int
+exercises.c:22:15: note: expected ‘int *’ but argument is of type ‘int’
+   22 | int sumaN(int a[], int N) {
+      |           ~~~~^~~
+exercises.c:41:7: error: unused variable ‘sum’ [-Werror=unused-variable]
+   41 |   int sum = sumaN(2,3);
+      |       ^~~
+exercises.c:41:13: error: ‘sumaN’ accessing 4 bytes in a region of size 0 [-Werror=stringop-overflow=]
+   41 |   int sum = sumaN(2,3);
+      |             ^~~~~~~~~~
+exercises.c:41:13: note: referencing argument 1 of type ‘int *’
+exercises.c:22:5: note: in a call to function ‘sumaN’
+   22 | int sumaN(int a[], int N) {
+      |     ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6bb1948
