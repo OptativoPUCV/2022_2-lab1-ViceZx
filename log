@@ -203,3 +203,13 @@ exercises.c:22:5: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 ae842d8
+Fri 12 Aug 2022 02:28:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:21: error: expected expression before ‘]’ token
+   41 |   int sum = sumaN(a[],n);
+      |                     ^
+Compilation failed
+a1d75a7
