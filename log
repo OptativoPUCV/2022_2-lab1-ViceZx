@@ -101,3 +101,22 @@ exercises.c:42:18: error: expected ‘;’ before ‘}’ token
       | ~                 
 Compilation failed
 04a2efb
+Fri 12 Aug 2022 02:23:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:3: error: too few arguments to function ‘sumaN’
+   41 |   sumaN();
+      |   ^~~~~
+exercises.c:22:5: note: declared here
+   22 | int sumaN(int a[], int N) {
+      |     ^~~~~
+exercises.c:42:11: error: too few arguments to function ‘sumaN’
+   42 |   *suma = sumaN();
+      |           ^~~~~
+exercises.c:22:5: note: declared here
+   22 | int sumaN(int a[], int N) {
+      |     ^~~~~
+Compilation failed
+e79626b
