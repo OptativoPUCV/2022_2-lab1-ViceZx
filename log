@@ -427,3 +427,29 @@ exercises.c:113:11: error: variable ‘c’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 64c3178
+Fri 12 Aug 2022 06:01:24 PM UTC: 
+ exercises.c | 10 ++--------
+ 1 file changed, 2 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:13: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘Vector **’ [-Werror=format=]
+  114 |     scanf("%d",&a);
+      |            ~^  ~~
+      |             |  |
+      |             |  Vector **
+      |             int *
+exercises.c:116:15: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘Vector **’ [-Werror=format=]
+  116 |       scanf("%d",&b);
+      |              ~^  ~~
+      |               |  |
+      |               |  Vector **
+      |               int *
+exercises.c:114:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  114 |     scanf("%d",&a);
+      |     ^~~~~~~~~~~~~~
+exercises.c:116:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  116 |       scanf("%d",&b);
+      |       ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2531908

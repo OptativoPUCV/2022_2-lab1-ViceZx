@@ -110,16 +110,10 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  int a,b,c = 0;
   for(int i = 0; i < 3; i++){
-    a = scanf("%d",&a);
+    scanf("%d",&a);
     for(int j = 0; j < 3; j++){
-      b = scanf("%d",&b);
-      for(int k = 0; k < 3; k++){
-        if(a[i] == b[j]){
-          c[k] = a+b;
-        }
-      }
+      scanf("%d",&b);
     }
   }
 
