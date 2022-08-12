@@ -283,3 +283,19 @@ exercises.c:41:25: note: expected ‘int **’ but argument is of type ‘int *�
 cc1: all warnings being treated as errors
 Compilation failed
 09481ba
+Fri 12 Aug 2022 02:30:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘test_suma_n’:
+test.c:91:18: error: passing argument 1 of ‘sumaNultimos’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+   91 |     sumaNultimos(a, 10, m, res);
+      |                  ^
+      |                  |
+      |                  int *
+In file included from test.c:5:
+exercises.c:41:24: note: expected ‘int **’ but argument is of type ‘int *’
+   41 | void sumaNultimos(int *a[], int n, int m, int * suma) {
+      |                   ~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+f54a34e
