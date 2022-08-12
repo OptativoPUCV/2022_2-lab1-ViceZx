@@ -735,3 +735,9 @@ exercises.c:83:11: error: ‘v’ undeclared (first use in this function)
 exercises.c:83:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4cc29ea
+Fri 12 Aug 2022 06:24:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+48db9a4
