@@ -853,3 +853,17 @@ exercises.c:68:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 2e8fafb
+Fri 12 Aug 2022 06:53:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:66:10: error: expected expression before ‘Persona’
+   66 |   return Persona* p = (malloc(sizeof(Persona)));
+      |          ^~~~~~~
+exercises.c:68:1: error: control reaches end of non-void function [-Werror=return-type]
+   68 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+820ca0a
