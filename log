@@ -724,3 +724,14 @@ exercises.c:83:4: error: ‘v’ undeclared (first use in this function)
 exercises.c:83:4: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 16c6999
+Fri 12 Aug 2022 06:24:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:11: error: ‘v’ undeclared (first use in this function)
+   83 |    return v = (Vector *)malloc(sizeof(Vector)*n);
+      |           ^
+exercises.c:83:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4cc29ea
