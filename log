@@ -486,3 +486,21 @@ exercises.c:116:7: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 a7abb47
+Fri 12 Aug 2022 06:03:28 PM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:17: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  114 |     c[i] = a[i] + b[i]
+      |            ~~~~ ^ ~~~~
+      |             |      |
+      |             Vector Vector
+exercises.c:114:23: error: expected ‘;’ before ‘}’ token
+  114 |     c[i] = a[i] + b[i]
+      |                       ^
+      |                       ;
+  115 |   }
+      |   ~                    
+Compilation failed
+1ced1d7
