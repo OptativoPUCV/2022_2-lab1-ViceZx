@@ -365,3 +365,21 @@ exercises.c:66:21: error: expected expression before ‘Persona’
       |                     ^~~~~~~
 Compilation failed
 0e525a0
+Fri 12 Aug 2022 05:40:13 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:66:11: error: ‘p’ undeclared (first use in this function)
+   66 |   return *p = scanf("%s %s %d",&Persona.nombre, &Persona.rut, &Persona.edad);
+      |           ^
+exercises.c:66:11: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:66:33: error: expected expression before ‘Persona’
+   66 |   return *p = scanf("%s %s %d",&Persona.nombre, &Persona.rut, &Persona.edad);
+      |                                 ^~~~~~~
+exercises.c:67:1: error: control reaches end of non-void function [-Werror=return-type]
+   67 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b1fac61

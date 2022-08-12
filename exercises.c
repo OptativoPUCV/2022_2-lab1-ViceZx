@@ -63,8 +63,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-  scanf("%s %s %d",&Persona.nombre, &Persona.rut, &Persona.edad);
-   return NULL;
+  return *p = scanf("%s %s %d",&Persona.nombre, &Persona.rut, &Persona.edad);
 }
 
 /*
