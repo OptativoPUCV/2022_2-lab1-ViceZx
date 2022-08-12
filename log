@@ -1,0 +1,25 @@
+Fri 12 Aug 2022 02:13:43 PM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:23: error: expected expression before ‘Persona’
+   62 |   scanf("%s""%s""%d",&Persona.nombre,&Persona.rut,&Persona.edad);
+      |                       ^~~~~~~
+exercises.c: In function ‘crearVector’:
+exercises.c:81:16: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   81 |   int vector = malloc (n*sizeof(int));
+      |                ^~~~~~
+exercises.c:82:10: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   82 |   return vector;
+      |          ^~~~~~
+exercises.c: In function ‘asignarValor’:
+exercises.c:92:17: error: expected ‘;’ before ‘)’ token
+   92 |   for (i = valor)
+      |                 ^
+      |                 ;
+exercises.c:92:17: error: expected expression before ‘)’ token
+exercises.c:94:1: error: expected expression before ‘}’ token
+   94 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+47b30b6
