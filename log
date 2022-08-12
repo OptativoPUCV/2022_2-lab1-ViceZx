@@ -774,3 +774,24 @@ Fri 12 Aug 2022 06:30:44 PM UTC:
  tests:  2|5
 total_score: 20/70
 b606771
+Fri 12 Aug 2022 06:45:18 PM UTC: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:66:3: error: ‘p’ undeclared (first use in this function)
+   66 |   p = malloc(30*sizeof(Persona));
+      |   ^
+exercises.c:66:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:68:17: error: expected expression before ‘Persona’
+   68 |     scanf("%c",&Persona.nombre);
+      |                 ^~~~~~~
+exercises.c:69:12: error: expected expression before ‘Persona’
+   69 |     p[i] = Persona.nombre;
+      |            ^~~~~~~
+exercises.c:72:1: error: control reaches end of non-void function [-Werror=return-type]
+   72 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2f3ef31

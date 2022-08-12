@@ -63,7 +63,12 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+  p = malloc(30*sizeof(Persona));
+  for(int i = 0; i < 30; i++){
+    scanf("%c",&Persona.nombre);
+    p[i] = Persona.nombre;
+  }
+  return p;
 }
 
 /*
@@ -80,7 +85,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return malloc(n*sizeof(Vector));
+   return NULL;
   
 }
 
