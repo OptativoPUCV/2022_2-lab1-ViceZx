@@ -69,3 +69,9 @@ exercises.c:62:21: error: expected expression before ‘Persona’
       |                     ^~~~~~~
 Compilation failed
 99c0283
+Fri 12 Aug 2022 02:17:46 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+673794a
