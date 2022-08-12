@@ -516,3 +516,24 @@ exercises.c:114:17: error: invalid operands to binary + (have ‘Vector’ and �
       |             Vector Vector
 Compilation failed
 06df3ae
+Fri 12 Aug 2022 06:05:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:114:13: error: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘Vector *’ [-Werror=format=]
+  114 |     scanf("%d %d",a, b);
+      |            ~^     ~
+      |             |     |
+      |             int * Vector *
+exercises.c:114:16: error: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘Vector *’ [-Werror=format=]
+  114 |     scanf("%d %d",a, b);
+      |               ~^     ~
+      |                |     |
+      |                int * Vector *
+exercises.c:114:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  114 |     scanf("%d %d",a, b);
+      |     ^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aa20f34
