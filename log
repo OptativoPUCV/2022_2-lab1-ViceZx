@@ -1337,3 +1337,14 @@ exercises.c:120:11: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 8b5d747
+Sun 14 Aug 2022 04:33:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:4: error: statement with no effect [-Werror=unused-value]
+  120 |   c->datos;
+      |   ~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+068b352
