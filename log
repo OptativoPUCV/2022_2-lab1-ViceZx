@@ -1282,3 +1282,20 @@ exercises.c:122:16: error: invalid operands to binary + (have ‘Vector *’ and
 cc1: all warnings being treated as errors
 Compilation failed
 bafd29b
+Sun 14 Aug 2022 04:32:11 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:14: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  120 |   c->datos[a + b]=a;
+      |              ^
+exercises.c:121:14: error: assignment to ‘int’ from ‘Vector *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  121 |   c->datos[1]=a;
+      |              ^
+exercises.c:122:14: error: assignment to ‘int’ from ‘Vector *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  122 |   c->datos[2]=a;
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+fe67b34
