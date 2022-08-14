@@ -1086,3 +1086,24 @@ Fri 12 Aug 2022 08:24:28 PM UTC:
  tests:  6|2
 total_score: 50/70
 ffb884a
+Sun 14 Aug 2022 03:48:58 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:9: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  120 |   c = a + b;n
+      |         ^
+exercises.c:120:13: error: ‘n’ undeclared (first use in this function)
+  120 |   c = a + b;n
+      |             ^
+exercises.c:120:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:120:14: error: expected ‘;’ before ‘}’ token
+  120 |   c = a + b;n
+      |              ^
+      |              ;
+  121 | 
+  122 | }
+      | ~             
+Compilation failed
+63576b4
