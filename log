@@ -1428,3 +1428,20 @@ exercises.c:121:5: error: ‘*c.datos’ is used uninitialized [-Werror=uninitia
 cc1: all warnings being treated as errors
 Compilation failed
 f0c93af
+Sun 14 Aug 2022 04:42:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘sumaV’:
+exercises.c:121:5: error: ‘*c.datos’ is used uninitialized [-Werror=uninitialized]
+  121 |   c -> datos[0] = 1;c -> datos[1] = 3;c -> datos[2] = 5;
+      |   ~~^~~~~~~~
+exercises.c:121:23: error: ‘*c.datos’ is used uninitialized [-Werror=uninitialized]
+  121 |   c -> datos[0] = 1;c -> datos[1] = 3;c -> datos[2] = 5;
+      |                     ~~^~~~~~~~
+exercises.c:121:41: error: ‘*c.datos’ is used uninitialized [-Werror=uninitialized]
+  121 |   c -> datos[0] = 1;c -> datos[1] = 3;c -> datos[2] = 5;
+      |                                       ~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b382a14

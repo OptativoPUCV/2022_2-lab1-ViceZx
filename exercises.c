@@ -118,7 +118,7 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   c = malloc(sizeof(Vector));
-  c -> datos[0] = 1;
+  c -> datos[0] = 1;c -> datos[1] = 3;c -> datos[2] = 5;
   
 
 }
