@@ -1445,3 +1445,14 @@ exercises.c:121:41: error: ‘*c.datos’ is used uninitialized [-Werror=uniniti
 cc1: all warnings being treated as errors
 Compilation failed
 b382a14
+Sun 14 Aug 2022 04:44:12 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:14: error: ‘i’ undeclared (first use in this function)
+  120 |   c -> datos[i] = 1;
+      |              ^
+exercises.c:120:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+064e33f
