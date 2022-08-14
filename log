@@ -1381,3 +1381,16 @@ Sun 14 Aug 2022 04:39:21 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 eafdee4
+Sun 14 Aug 2022 04:40:15 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:12: error: ‘c’ redeclared as different kind of symbol
+  120 |   Vector * c = malloc(sizeof(Vector));
+      |            ^
+exercises.c:119:45: note: previous definition of ‘c’ with type ‘Vector *’
+  119 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                                    ~~~~~~~~~^
+Compilation failed
+2743e10
