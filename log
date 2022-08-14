@@ -1358,3 +1358,16 @@ exercises.c:120:12: error: request for member ‘a’ in something not a structu
       |            ^~
 Compilation failed
 9082f1a
+Sun 14 Aug 2022 04:38:55 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:121:26: error: expected ‘;’ before ‘}’ token
+  121 |     *(c + i) -> datos = 0
+      |                          ^
+      |                          ;
+  122 |   }
+      |   ~                       
+Compilation failed
+b4a5388
