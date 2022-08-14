@@ -1216,3 +1216,15 @@ exercises.c:120:14: error: assignment to ‘int *’ from incompatible pointer t
 cc1: all warnings being treated as errors
 Compilation failed
 4e1d4c4
+Sun 14 Aug 2022 04:23:19 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:121:15: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  121 |   c[i] = a[i] + b[i];
+      |          ~~~~ ^ ~~~~
+      |           |      |
+      |           Vector Vector
+Compilation failed
+3c0c107
