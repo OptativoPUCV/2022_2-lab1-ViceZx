@@ -1162,3 +1162,17 @@ exercises.c:122:14: error: invalid operands to binary + (have ‘Vector’ and �
 cc1: all warnings being treated as errors
 Compilation failed
 a353233
+Sun 14 Aug 2022 04:19:32 PM UTC: 
+ exercises.c | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:14: error: ‘i’ undeclared (first use in this function)
+  120 |   c -> datos[i] = a + b;
+      |              ^
+exercises.c:120:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:120:21: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  120 |   c -> datos[i] = a + b;
+      |                     ^
+Compilation failed
+e965455
