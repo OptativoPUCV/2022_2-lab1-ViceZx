@@ -1417,3 +1417,14 @@ exercises.c:121:14: error: assignment to ‘int *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 0da37f3
+Sun 14 Aug 2022 04:41:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘sumaV’:
+exercises.c:121:5: error: ‘*c.datos’ is used uninitialized [-Werror=uninitialized]
+  121 |   c -> datos[0] = 1;
+      |   ~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f0c93af
