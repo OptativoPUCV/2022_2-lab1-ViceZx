@@ -1117,3 +1117,21 @@ exercises.c:120:9: error: invalid operands to binary + (have ‘Vector *’ and 
       |         ^
 Compilation failed
 2d4fdd9
+Sun 14 Aug 2022 03:53:07 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:121:7: error: ‘i’ undeclared (first use in this function)
+  121 |   for(i = 0;i < v; i++ ){
+      |       ^
+exercises.c:121:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:122:20: error: expected ‘;’ before ‘}’ token
+  122 |     c = a[i] + b[i]
+      |                    ^
+      |                    ;
+  123 | 
+  124 |   }
+      |   ~                 
+Compilation failed
+acd1ac9
