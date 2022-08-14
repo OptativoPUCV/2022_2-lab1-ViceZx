@@ -1228,3 +1228,20 @@ exercises.c:121:15: error: invalid operands to binary + (have ‘Vector’ and �
       |           Vector Vector
 Compilation failed
 3c0c107
+Sun 14 Aug 2022 04:26:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:121:8: error: invalid type argument of ‘->’ (have ‘Vector’)
+  121 |   c[i] -> a.datos[i]
+      |        ^~
+exercises.c:121:21: error: expected ‘;’ before ‘}’ token
+  121 |   c[i] -> a.datos[i]
+      |                     ^
+      |                     ;
+......
+  124 | }
+      | ~                    
+Compilation failed
+16a1db0
