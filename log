@@ -1394,3 +1394,9 @@ exercises.c:119:45: note: previous definition of ‘c’ with type ‘Vector *�
       |                                    ~~~~~~~~~^
 Compilation failed
 2743e10
+Sun 14 Aug 2022 04:40:28 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+268d180
