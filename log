@@ -1107,3 +1107,13 @@ exercises.c:120:14: error: expected ‘;’ before ‘}’ token
       | ~             
 Compilation failed
 63576b4
+Sun 14 Aug 2022 03:49:09 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:9: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  120 |   c = a + b;
+      |         ^
+Compilation failed
+2d4fdd9
